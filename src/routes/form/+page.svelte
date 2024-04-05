@@ -89,5 +89,7 @@
         margin-bottom: 30px;
         border-style: solid;
         border-width: 0.05px;
+        cursor: pointer;
     }
+
 </style>
