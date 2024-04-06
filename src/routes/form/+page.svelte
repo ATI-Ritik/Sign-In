@@ -1,17 +1,24 @@
 <section>
 <div class="form">
 <div class="header">
+    <div class="title">
     <h2>Login</h2>
     <p>Enter your email below to login to your account</p>
+    </div>
+    
     <div style="margin-left: 20px; margin-top: 30px;">
     <label for="email" >Email</label><br>
     <input type="email" id="email" name="email" placeholder="m@example.com">
     </div>
+
     <div style="margin-left: 20px; margin-top: 20px;">
         <label for="password" >Password</label><br>
         <input type="password" id="password" name="password">
     </div>
-    <button class="sign-in">Sign in</button>
+    <div>
+        <button class="sign-in">Sign in</button>
+    </div>
+    
 
 </div>
 
@@ -40,11 +47,14 @@
         width: 400px;
         margin-left: 300px;
         margin-top: 250px;
+        margin-right: 300px;
+        flex-direction: column;
     }
-    h2,p{
+    .title{
         margin-left: 20px;
         margin-bottom: 5px;
         text-align: left;
+        flex: 1;
     }
     h2{
         font-size: 24px;
@@ -56,7 +66,7 @@
         color: rgba(236, 236, 236,0.5)
     }
     #email{
-        width: 350px;
+        width: 90%;
         padding: 5px;
         background-color: black;
         border-radius: 5px;
@@ -69,7 +79,7 @@
         padding-left: 5px;
     }
     #password{
-        width: 350px;
+        width: 90%;
         padding: 5px;
         background-color: black;
         border-radius: 5px;
@@ -79,7 +89,7 @@
         border-color: rgba(194, 194, 194,0.2);
     }
     .sign-in {
-        width: 360px;
+        width: 88%;
         padding: 8px;
         background-color: rgb(255, 255, 255);
         color: black;
@@ -90,6 +100,12 @@
         border-style: solid;
         border-width: 0.05px;
         cursor: pointer;
+    }
+
+    @media (max-width: 800px) {
+    .form{
+        margin-left: 4px;
+        }
     }
 
 </style>
